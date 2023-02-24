@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav>
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- Header -->
+	<header>
+		<div class="typing-animation">
+			<h1><span id="typed-text"></span></h1>
+		</div>
+		<p>Welcome to my portfolio website! I'm a passionate <span id="typed-text-2"></span>.</p>
+		<div class="header-buttons">
+			<a href="#portfolio" class="button">View Portfolio</a>
+			<a href="#contact" class="button">Contact Me</a>
+		</div>
+	</header>
+
+	<!-- About Section -->
+	<section id="about">
+		<h2>About Me</h2>
+		<div class="about-content">
+			<img src="profile-pic.jpg">
+			<p>I am a skilled and experienced web developer with a passion for creating beautiful and functional websites. I specialize in HTML, CSS, and JavaScript, and I'm always learning new techniques and technologies to improve my skills. In my free time, I enjoy hiking and playing guitar.</p>
+		</div>
+		<div class="skillset">
+			<h3>My Skill Set</h3>
+			<ul>
+				<li>HTML/CSS</li>
+				<li>JavaScript</li>
+				<li>React</li>
+				<li>Node.js</li>
+				<li>WordPress</li>
+				<li>Photoshop</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- Portfolio Section -->
+	<section id="portfolio">
+		<h2>My Portfolio</h2>
+		<div class="gallery">
+			<a href="#">
+				<img src="portfolio-item-1.jpg">
+				<div class="overlay">
+					<h3>Project Title</h3>
+					<p>A brief description of the project.</p>
+					<button>View Details</button>
+				</div>
+			</a>
+			<a href="#">
+				<img src="portfolio-item-2.jpg">
+				<div class="overlay">
+					<h3>Project Title</h3>
+					<p>A brief description of the project.</p>
+					<button>View Details</button>
+				</div>
+			</a>
+			<a href="#">
+				<img src="portfolio-item-3.jpg">
+				<div class="overlay">
+					<h3>Project Title</h3>
+					<p>A brief description of the project.</p>
+					<button>View Details</button>
+				</div>
+			</a>
+			<a href="#">
+				<img src="portfolio-item-4.jpg">
+				<div class="overlay">
+					<h3>Project Title</h3>
+					<p>A brief description of the project.</p>
+					<button>View Details</button>
+				</div>
+			</a>
+			<a href="#">
+				<img src="portfolio-item
+-5.jpg">
+<div class="overlay">
+<h3>Project Title</h3>
+<p>A brief description of the project.</p>
+<button>View Details</button>
+</div>
+</a>
+<a href="#">
+<img src="portfolio-item-6.jpg">
+<div class="overlay">
+<h3>Project Title</h3>
+<p>A brief description of the project.</p>
+<button>View Details</button>
+</div>
+</a>
+</div>
+</section>
+<!-- Blog Section -->
+<section id="blog">
+	<h2>My Blog</h2>
+	<div class="blog-posts">
+		<div class="blog-post">
+			<h3>Post Title</h3>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			<a href="#">Read More</a>
+		</div>
+		<div class="blog-post">
+			<h3>Post Title</h3>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			<a href="#">Read More</a>
+		</div>
+		<div class="blog-post">
+			<h3>Post Title</h3>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			<a href="#">Read More</a>
+		</div>
+	</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+	<h2>Contact Me</h2>
+	<div class="contact-form">
+		<form action="submit-form.php" method="POST">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Send Message">
+		</form>
+	</div>
+	<div class="social-links">
+		<a href="#"><i class="fab fa-twitter"></i></a>
+		<a href="#"><i class="fab fa-facebook"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+		<a href="#"><i class="fab fa-linkedin"></i></a>
+		<a href="#"><i class="fab fa-github"></i></a>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer>
+	<p>&copy; 2023 My Portfolio. All rights reserved.</p>
+</footer>
+
+<!-- Typed.js -->
+<script>
+	var typed = new Typed('#typed-text', {
+		strings: ['Web Developer', 'UI/UX Designer', 'Creative Problem Solver'],
+		typeSpeed: 60,
+		backSpeed: 60,
+		backDelay: 1000,
+		loop: true
+	});
+
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-Zik0Z0h/xRfO85e0/1Lnsl1r+vKj2TpaM0o82+Hv46NjrJg1jK0pXNVJltU1B/jpLWX6Umvzi6xqUBQzD/bZQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav>
+		<a href="#" class="logo">My Portfolio</a>
+		<ul class="nav-links">
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header>
+		<div class="hero-textbox">
+			<h1>Hi, I'm John Doe.</h1>
+			<h2><span id="typed-text"></span></h2>
+		</div>
+	</header>
+
+	<!-- About Section -->
+	<section id="about">
+		<h2>About Me</h2>
+		<div class="about-textbox">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
+				ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
+				mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			<p>Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.
+				Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat
+				pretium libero. Cras id dui. Aenean ut</p>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section id="services
+	<div class="services-box">
+		<i class="fas fa-desktop"></i>
+		<h3>Web Design</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
+			ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+	</div>
+	<div class="services-box">
+		<i class="fas fa-code"></i>
+		<h3>Web Development</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
+			ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+	</div>
+	<div class="services-box">
+		<i class="fas fa-mobile-alt"></i>
+		<h3>Mobile Development</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus
+			ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+	</div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+	<h2>Portfolio</h2>
+	<div class="portfolio-box">
+		<div class="portfolio-img">
+			<img src="https://picsum.photos/500/300" alt="Portfolio Image">
+		</div>
+		<div class="portfolio-textbox">
+			<h3>Project 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+				cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+			<a href="#">View Project</a>
+		</div>
+	</div>
+	<div class="portfolio-box">
+		<div class="portfolio-img">
+			<img src="https://picsum.photos/500/300" alt="Portfolio Image">
+		</div>
+		<div class="portfolio-textbox">
+			<h3>Project 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+				cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+			<a href="#">View Project</a>
+		</div>
+	</div>
+	<div class="portfolio-box">
+		<div class="portfolio-img">
+			<img src="https://picsum.photos/500/300" alt="Portfolio Image">
+		</div>
+		<div class="portfolio-textbox">
+			<h3>Project 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+				cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+			<a href="#">View Project</a>
+		</div>
+	</div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog">
+	<h2>Latest Blog Posts</h2>
+	<div class="blog-box">
+		<div class="blog-img">
+			<img src="https://picsum.photos/500/300" alt="Blog Image">
+		</div>
+		<div class="blog-textbox">
+			<h3>Blog Post 1</h3>
+<p class="blog-date">February 15, 2023</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+					dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus
+					sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora
+					torquent per conubia nostra, per inceptos himenaeos. </p>
+				<a href="#">Read More</a>
+			</div>
+		</div>
+		<div class="blog-box">
+			<div class="blog-img">
+				<img src="https://picsum.photos/500/300" alt="Blog Image">
+			</div>
+			<div class="blog-textbox">
+				<h3>Blog Post 2</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+					dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus
+					sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora
+					torquent per conubia nostra, per inceptos himenaeos. </p>
+				<a href="#">Read More</a>
+			</div>
+		</div>
+		<div class="blog-box">
+			<div class="blog-img">
+				<img src="https://picsum.photos/500/300" alt="Blog Image">
+			</div>
+			<div class="blog-textbox">
+				<h3>Blog Post 3</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
+					dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus
+					sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora
+					torquent per conubia nostra, per inceptos himenaeos. </p>
+				<a href="#">Read More</a>
+			</div>
+		</div>
+	</section>
+<!-- Contact Section -->
+<section id="contact">
+	<h2>Contact Me</h2>
+	<div class="contact-form">
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Send">
+		</form>
+	</div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+	<p>&copy; 2023 My Portfolio Website. All Rights Reserved.</p>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs
